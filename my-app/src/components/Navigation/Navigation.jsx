@@ -1,25 +1,41 @@
-import React from "react";
-import logo from "../../images/logo.png";
-import { Container, Header, Link, Logo } from "./Navigation.styled";
+import React from 'react';
+import logo from '../../images/logo.png';
+import s from './Navigation.module.scss';
 
 const Navigation = () => {
   return (
-    <Container>
-      <Header>
-        <Logo src={logo} alt="logo" />
-        <nav>
-          <Link href="#home">HOME</Link>
-
-          <Link href="#about">ABOUT</Link>
-
-          <Link href="#portfolio">PORTFOLIO</Link>
-
-          <Link href="#services">SERVICES</Link>
-
-          <Link href="#contact">CONTACT</Link>
-        </nav>
-      </Header>
-    </Container>
+    <div className={s.container}>
+      <header className={s.header}>
+        <img src={logo} alt="logo" className={s.image} />
+        <ul className={s.navigation}>
+          <li>
+            <a className={s.link} href="#home">
+              HOME
+            </a>
+          </li>
+          <li>
+            <a className={s.link} href="#about">
+              ABOUT
+            </a>
+          </li>
+          <li>
+            <a className={s.link} href="#portfolio">
+              PORTFOLIO
+            </a>
+          </li>
+          <li>
+            <a className={s.link} href="#services">
+              SERVICES
+            </a>
+          </li>
+          <li>
+            <a className={s.link} href="#contact">
+              CONTACT
+            </a>
+          </li>
+        </ul>
+      </header>
+    </div>
   );
 };
 

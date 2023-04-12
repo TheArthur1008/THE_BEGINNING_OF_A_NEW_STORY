@@ -1,24 +1,22 @@
-import React from "react";
-import skyscraper from "../../images/skyscraper.png";
-import tower from "../../images/tower.png";
-import {
-  Container,
-  Div,
-  Image,
-  List,
-  Subtitle,
-  Tittle,
-  Wrapper,
-} from "./About.styled";
+import React from 'react';
+import skyscraper from '../../images/skyscraper.png';
+import tower from '../../images/tower.png';
+import s from './About.module.scss';
 
 const About = () => {
   return (
-    <div id="about">
-      <Container>
-        <Tittle>ABOUT US</Tittle>
-        <Wrapper>
-          <Image src={skyscraper} alt="skyscraper" width="600" heigth="500" />
-          <List>
+    <div id="about" className={s.container}>
+      <div className={s.containerAbout}>
+        <h2 className={s.title}>ABOUT US</h2>
+        <div className={s.wrapper}>
+          <img
+            className={s.image}
+            src={skyscraper}
+            alt="skyscraper"
+            width="600"
+            heigth="500"
+          />
+          <ul className={s.list}>
             <li>
               TITAN is a premium design & build contractor based in New York
               City.
@@ -32,16 +30,16 @@ const About = () => {
               between client, architect and contractor is key to achieving our
               highest goal – client satisfaction.
             </li>
-          </List>
-        </Wrapper>
-      </Container>
-      <Div>
-        <Subtitle>
+          </ul>
+        </div>
+      </div>
+      <div className={s.wrapperSubtitle}>
+        <h3 className={s.subtitle}>
           We are a client-focused team with a passion <br /> for creating
           enduring and sustainable impact.
-        </Subtitle>
-        <Wrapper>
-          <List>
+        </h3>
+        <div className={s.wrapper}>
+          <ul className={s.list}>
             <li>
               Established in 2011, we’ve quickly distinguished ourselves as a
               contractor of choice among clients and architects who expect
@@ -59,10 +57,16 @@ const About = () => {
               mean we deliver the difference between easy solutions and
               intelligent solutions.
             </li>
-          </List>
-          <Image src={tower} alt="tower" width="600" heigth="400" />
-        </Wrapper>
-      </Div>
+          </ul>
+          <img
+            className={s.image}
+            src={tower}
+            alt="tower"
+            width="600"
+            heigth="400"
+          />
+        </div>
+      </div>
     </div>
   );
 };
