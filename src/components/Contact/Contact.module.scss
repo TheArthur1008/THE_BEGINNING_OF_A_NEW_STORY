@@ -1,78 +1,78 @@
-import styled from "styled-components";
+@import '../../sass/utils/container';
+@import '../../sass/utils/mixins';
+@import '../../sass/utils/variables';
 
-export const WrapperContact = styled.div`
+.wrapperContacts {
   margin: 0 100px;
-`;
+}
 
-export const Container = styled.div`
+.container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
   border-top: 4px solid rgba(255, 255, 255, 0.4);
-`;
+}
 
-export const Contacts = styled.div`
+.contacts {
   display: flex;
   flex-direction: column;
   gap: 50px;
-`;
+}
 
-export const Description = styled.p`
+.description {
   color: #c0c0c0;
-`;
+}
 
-export const Adress = styled.p`
+.adress {
   display: flex;
   flex-direction: column;
   gap: 10px;
   color: #c0c0c0;
-`;
+}
 
-export const Link = styled.a`
+.link {
   text-decoration: none;
   color: #c0c0c0;
-`;
+}
 
-export const Wrapper = styled.div`
+.wrapper {
   display: flex;
   gap: 90px;
-`;
+}
 
-export const Subtitle = styled.h3`
+.subtitle {
   color: #c0c0c0;
   margin-bottom: 15px;
   font-size: 17px;
-`;
+}
 
-export const Item = styled.li`
-  :not(:last-child) {
-    margin-bottom: 10px;
-  }
-`;
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
 
-export const ContainerInput = styled.div`
+.containerInput {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px 0;
   border-top: 4px solid rgb(255, 255, 255);
-`;
+}
 
-export const Input = styled.input`
+.input {
   width: 350px;
   height: 40px;
   border-radius: 10px;
   border: 0;
-`;
+}
 
-export const Span = styled.span`
+.wrapperSvg {
   position: absolute;
   left: 87%;
-`;
+}
 
-export const SocialList = styled.ul`
+.list {
   display: flex;
   gap: 10px;
-`;
+}

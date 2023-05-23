@@ -1,17 +1,15 @@
-import styled from "styled-components";
-
-export const Wrapper = styled.div`
+.wrapper {
   border-bottom: 4px solid rgba(255, 255, 255, 0.4);
-`;
+}
 
-export const Container = styled.div`
+.container {
   margin-right: 60px;
   border-right: 4px solid rgba(255, 255, 255, 0.4);
   padding-right: 75px;
   padding-bottom: 75px;
-`;
+}
 
-export const Tittle = styled.h2`
+.title {
   text-align: end;
   font-size: 3.2em;
   padding-top: 30px;
@@ -19,29 +17,29 @@ export const Tittle = styled.h2`
   padding-right: 110px;
   word-spacing: 0.1em;
   border-top: 4px solid rgba(255, 255, 255, 0.4);
-`;
+}
 
-export const List = styled.ul`
+.ul {
   display: flex;
   justify-content: center;
   gap: 130px;
   margin-bottom: 50px;
-`;
+}
 
-export const Buttons = styled.button`
+.buttons {
   border: 0;
   position: relative;
   background-color: inherit;
   color: #aaa9a9;
   cursor: pointer;
-  :hover {
+  &:hover {
     color: #ffffff;
   }
-  :active {
+  &:active {
     color: #ffffff;
     :after {
       position: absolute;
-      content: "";
+      content: '';
       bottom: 0;
       left: 0;
       width: 100%;
@@ -50,9 +48,9 @@ export const Buttons = styled.button`
       border-radius: 2px;
     }
   }
-`;
+}
 
-export const Button = styled.button`
+.button {
   cursor: pointer;
   display: block;
   margin-left: auto;
@@ -62,4 +60,4 @@ export const Button = styled.button`
   border-radius: 4px;
   padding: 7px 32px;
   margin-top: 60px;
-`;
+}
